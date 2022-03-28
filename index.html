@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda contactos</title>
+
+    <!-- Iconos google font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>AGENDA DE CONTACTOS</h1>
+    </header>
+
+    <main>
+        <!-- Formulario de datos -->
+        <div class="container_form">
+            <form action="" class="formulario" id="form">
+                <h3>Formulario nuevo contacto</h3>
+                <input type="text" name="nombre" id="nom_form" placeholder="nombre" autocomplete="off">
+                <input type="text" name="numero" id="num_form" placeholder="telefono" autocomplete="off">
+                <input type="text" name="direccion" id="dir_form" placeholder="direccion" autocomplete="off">
+                <button class="btn" id="agregar">Agregar tarea</button>
+            </form>
+        </div>
+        <!-- Listado de las tareas guardadas -->
+        <div class="container_listado">
+            <h3 id="header_listado">Listado de tareas</h3>
+            <div class="listado_tarea" id="listado_tareas">
+                <div class="tarea">
+                    <p>nombre</p>
+                    <p>Número</p>
+                    <p>Dirección</p>
+                    <span class="material-icons-sharp icono">
+                        delete_forever
+                    </span>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
